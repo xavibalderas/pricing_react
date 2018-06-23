@@ -6,10 +6,10 @@ import registerServiceWorker from './registerServiceWorker';
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/cjfm499pw3ou801560kjiro3e'
+const URI_API = process.env.REACT_APP_GRAPHCMS_API;
 
 const client = new ApolloClient({
-  uri: GRAPHCMS_API
+  uri: URI_API
 })
 
 ReactDOM.render(
