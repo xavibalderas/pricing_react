@@ -1,0 +1,14 @@
+<Query
+  query={gql`
+    {allBeds {
+        id
+      }}
+      `}
+> {({ loading, error, data }) => {
+if (loading) return <p>Loading...</p>;
+if (error) return <p>Error :(</p>;
+
+return data.allBeds.map(({ id, rate }) => (
+<p>Holo</p>
+));
+}} </Query>
