@@ -27,7 +27,7 @@ class App extends Component {
             <div>
             <h2>All Combinations</h2>
             {data.allBeds.map(bed =>(
-              <p>Combination => {bed.id}</p>
+              <p>Combination => {bed.reference}</p>
             ))}
             </div>
           );
